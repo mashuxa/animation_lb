@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Animation_lb</title>
+    <link rel="stylesheet" href="css/grid.min.css">
+    <link rel="stylesheet" href="css/common.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+
+<body class="grid">
+    <header class="header"> <a href="index.php" class="logo">Home</a> <span class="tagline">
+    <i>Animations library</i></span> </header>
+    <nav class="nav"> <a href="animate-css.html">Animate CSS</a> <a href="animate-jq.html">Animate JQuery</a> <a href="animate-cc.html">Animate CC</a> <a href="storage.php">Go to file storage</a> </nav>
+    <main class="main">
+        <div class="animation-container"> <img src="img/Star.png" alt="Pls, add image"> </div>
+        <div class="btns-wrapper">
+            <div class="btn stop">STOP ANIMATION</div>
+            <!--    <div class="btn minus100ms">-100ms animation speed</div> -->
+            <!--    <div class="btn plus100ms">+100ms animation speed</div> -->
+            <div class="btn displayOn">display: on</div>
+            <div class="btn displayOff">display: off</div>
+            <div class="btn opacityOn">opacity: on</div>
+        </div>
+        <div class="toggle-container">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>swing</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>linear</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInOutBounce</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInOutBack</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInOutExpo</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInOutQuart</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInOutQuad</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeOutBounce</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeOutBack</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeOutExpo</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeOutQuart</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeOutQuad</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInBounce</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInBack</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInExpo</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInQuart</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInQuad</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInOutElastic</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInOutCirc</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInOutQuint</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInOutCubic</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInOutSine</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeOutElastic</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeOutCirc</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeOutQuint</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeOutCubic</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeOutSine</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInElastic</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInCirc</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInQuint</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInCubic</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                    <tr>
+                        <th>easeInSine</th>
+                        <td>Toggle</td>
+                        <td>Show</td>
+                        <td>Hide</td>
+                        <td>Slide Toggle</td>
+                        <td>Slide Up</td>
+                        <td>Slide Down</td>
+                        <td>FadeToggle</td>
+                        <td>Fade In</td>
+                        <td>Fade Out</td>
+                        <td>Fade To</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer class="footer"> 2017 © All rights reserved </footer> 
+    <script src="js/animation-jq.min.js"></script>
+</body>
+
+</html>
